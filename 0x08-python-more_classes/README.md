@@ -1,7 +1,7 @@
 ## 0x08. Python - More Classes and Objects
 
 ##### Write a class Rectangle that defines a rectangle by: (based on 8-rectangle.py)
-'''
+```
 Private instance attribute: width:
 property def width(self): to retrieve it
 property setter def width(self, value): to set it:
@@ -33,4 +33,4 @@ rect_1 must be an instance of Rectangle, otherwise raise a TypeError exception w
 rect_2 must be an instance of Rectangle, otherwise raise a TypeError exception with the message rect_2 must be an instance of Rectangle
 Returns rect_1 if both have the same area value
 Class method def square(cls, size=0): that returns a new Rectangle instance with width == height == size
-'''
+```
