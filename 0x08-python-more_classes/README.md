@@ -1,8 +1,7 @@
 ## 0x08. Python - More Classes and Objects
 
+#####Write a class Rectangle that defines a rectangle by: (based on 8-rectangle.py)
 """
-Write a class Rectangle that defines a rectangle by: (based on 8-rectangle.py)
-
 Private instance attribute: width:
 property def width(self): to retrieve it
 property setter def width(self, value): to set it:
