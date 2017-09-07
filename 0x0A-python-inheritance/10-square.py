@@ -12,7 +12,7 @@ class Square(Rectangle):
 
     def area(self):
         """area method that overwrites the inherited one"""
-        return self.__size **2
+        return self.__size ** 2
 
     def __str__(self):
         """__str__ method"""
