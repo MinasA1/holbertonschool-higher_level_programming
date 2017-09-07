@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+"""class BaseGeometry complete"""
 class BaseGeometry():
     """class BaseGeometry"""
     def area(self):
