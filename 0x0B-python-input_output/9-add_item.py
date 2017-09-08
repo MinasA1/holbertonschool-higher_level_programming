@@ -11,8 +11,3 @@ if __name__ == "__main__":
         save(lis)
     except:
         save(lis, "add_item.json")
-
-
-
-    
-

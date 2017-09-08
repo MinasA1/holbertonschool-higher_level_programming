@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """read_n_lines"""
 
+
 def read_lines(filename="", nb_lines=0):
     """read_n_lines using with"""
     with open(filename, 'r', encoding="utf-8") as f:
