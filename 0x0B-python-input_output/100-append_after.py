@@ -3,6 +3,7 @@
 
 
 def append_after(filename="", search_string="", new_string=""):
+    """append after"""
     with open(filename, 'r', encoding="utf-8") as f:
         file = f.readlines()
         for nl, line in enumerate(file):
@@ -12,6 +13,3 @@ def append_after(filename="", search_string="", new_string=""):
     with open(filename, 'w', encoding="utf-8") as f:
         file = "".join(file)
         f.write(file)
-
-
-append_after("append_after_100.txt", "Python", "\"C is fun!\"\n")
