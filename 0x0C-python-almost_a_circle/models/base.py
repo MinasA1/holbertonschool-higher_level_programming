@@ -46,7 +46,7 @@ class Base:
         """returns an instance of attributes already set"""
         if cls.__name__ == 'Rectangle':
             from models.rectangle import Rectangle
-            dummy = Rectangle(1,1)
+            dummy = Rectangle(1, 1)
         if cls.__name__ == 'Square':
             from models.square import Square
             dummy = Square(1)
