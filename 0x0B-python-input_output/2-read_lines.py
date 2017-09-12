@@ -9,7 +9,7 @@ def read_lines(filename="", nb_lines=0):
         l = sum(1 for line in file)
         if nb_lines == 0 or nb_lines >= l:
             for line in file:
-                print (line, end="")
+                print(line, end="")
         else:
             for nl, line in enumerate(file):
                 print(line, end="")
