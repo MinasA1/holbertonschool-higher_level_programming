@@ -88,3 +88,30 @@ class Base:
         for element in jsdicts:
             objlist.append(cls.create(**element))
         return objlist
+
+    @staticmethod
+    def draw(list_rectangles, list_squares):
+        """method to print turtle graphic"""
+        import turtle
+        for obj in list_rectangles:
+            args = [int(i) for i in obj.split() if i.isdigit()]
+            r = Rectangle(*args)
+            turtle.pos(r.x, r.y)
+            turtle.fd(r.width)
+            turtle.rt(90)
+            turtle.fd(r.height)
+            turtle.rt(90)
+            turtle.fd(r.width)
+            turtle.rt(90)
+            turtle.fd(r.height)
+            turtle.clear()
+        for obj in list_squares:
+            args = [int(i) for i in obj.split()if i.isdigit()]
+            s = Square(*args)
+            for i in range(4):
+               turtle. pos(s.x, s.y)
+               turtle. fd(s.size)
+               turtle. rt(90)
+            turtle.clear()
+        del r
+        del s
