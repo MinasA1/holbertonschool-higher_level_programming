@@ -8,12 +8,12 @@ from models.rectangle import Rectangle
 class Square(Rectangle):
     def __init__(self, size, x=0, y=0, id=None):
         """Square constructor"""
-        super().__init__(width=size, height=size, x=x, y=y, id=id)
+        super().__init__(size, size, x, y, id)
 
     def __str__(self):
         """__str__ method"""
-        str = "[Square] ({:d}) {:d}/{:d} - {:d}"
-        return str.format(self.id, self.x, self.y, self.width)
+        return"[Square] ({:d}) {:d}/{:d} - {:d}".format(self.id, self.x,
+                                                        self.y, self.width)
 
     @property
     def size(self):
