@@ -1,4 +1,5 @@
---forgot comments, thank you sed 
+-- corrected comments, thank you sed again 
+
 SELECT state, MAX(value) AS max_temp
 FROM temperatures
 GROUP BY state

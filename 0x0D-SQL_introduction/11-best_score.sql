@@ -1,4 +1,5 @@
---forgot comments, thank you sed 
+-- corrected comments, thank you sed again 
+
 SELECT score, name
 FROM second_table
 WHERE score >= 10

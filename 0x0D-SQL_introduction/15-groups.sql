@@ -1,4 +1,5 @@
---forgot comments, thank you sed 
+-- corrected comments, thank you sed again 
+
 SELECT score, COUNT(score) AS number
 FROM second_table
 GROUP BY score

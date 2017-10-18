@@ -1,4 +1,5 @@
---forgot comments, thank you sed 
+-- corrected comments, thank you sed again 
+
 ALTER DATABASE 
       hbtn_0c_0
       CHARACTER SET = utf8mb4
