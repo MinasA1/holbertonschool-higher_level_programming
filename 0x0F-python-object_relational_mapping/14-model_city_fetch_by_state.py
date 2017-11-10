@@ -8,8 +8,9 @@ if __name__ == "__main__":
                                                    sys.argv[3],)
     eng = sqlalchemy.create_engine(inp)
     connect = eng.connect()
-    states = eng.execute("SELECT cities.id, cities.name, states.name"+
-                " FROM cities INNER JOIN states"+
-                " ON cities.state_id = states.id")
-    print("\n".join(["{}: ({}) {}".format(col[2], col[0], col[1]) for col in states]))
+    states = eng.execute("SELECT cities.id, cities.name, states.name" +
+                         " FROM cities INNER JOIN states" +
+                         " ON cities.state_id = states.id")
+    print("\n".join(["{}: ({}) {}".format(col[2], col[0],
+                                          col[1]) for col in states]))
     connect.close()

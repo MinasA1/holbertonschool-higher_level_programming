@@ -12,7 +12,7 @@ if __name__ == "__main__":
     eng = sqlalchemy.create_engine(inp)
     session = sessionmaker(bind=eng)
     Session = session()
-    inp = re.search("\w+", sys.argv[4]) 
+    inp = re.search("\w+", sys.argv[4])
     states = Session.query(State).filter_by(name=inp.group(0))
     if states.first() is None:
         print("Not found")
