@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/python3
 """my filter states"""
 if __name__ == "__main__":
     import MySQLdb

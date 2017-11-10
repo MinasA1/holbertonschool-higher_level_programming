@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/python3
 """list all using SQLAlchemy"""
 import sys
 import re
