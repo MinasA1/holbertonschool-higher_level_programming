@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""select states"""
+#select states
 if __name__ == "__main__":
     import MySQLdb
     import sys
