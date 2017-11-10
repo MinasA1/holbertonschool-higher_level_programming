@@ -8,6 +8,7 @@ if __name__ == "__main__":
                                                    sys.argv[3],)
     eng = sqlalchemy.create_engine(inp)
     connect = eng.connect()
-    states = eng.execute("SELECT * FROM states")
+    states = eng.execute("SELECT * FROM states " +
+                         "ORDER BY states.id ASC")
     print("\n".join(["{}: {}".format(col[0], col[1]) for col in states]))
     connect.close()
