@@ -12,5 +12,7 @@ if __name__ == "__main__":
     session = sessionmaker(bind=eng)
     Session = session()
     states = Session.query(State.id, State.name).first()
-    print("{}: {}".format(states[0], states[1]))
-
+    if states is None:
+        print("Nothing")
+    else:
+        print("{}: {}".format(states[0], states[1]))
