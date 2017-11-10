@@ -10,5 +10,8 @@ if __name__ == "__main__":
     connect = eng.connect()
     states = eng.execute("SELECT * FROM states " +
                          "ORDER BY states.id ASC")
-    print("\n".join(["{}: {}".format(col[0], col[1]) for col in states]))
+    if states is None:
+        print("Nothing")
+    else:
+        print("\n".join(["{}: {}".format(col[0], col[1]) for col in states]))
     connect.close()
