@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-#select states
+"""select states"""
 
 
 if __name__ == "__main__":
