@@ -1,4 +1,4 @@
-#!/usr/bin/python3                                                                                                                
+#!/usr/bin/python3
 """fetch status"""
 from requests import get
 from sys import argv

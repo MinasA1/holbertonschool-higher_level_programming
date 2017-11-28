@@ -1,4 +1,4 @@
-#!/usr/bin/python3                                                                                                                
+#!/usr/bin/python3
 """fetch status"""
 from urllib import parse, request as http, error
 from sys import argv
