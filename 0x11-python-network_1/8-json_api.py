@@ -11,6 +11,7 @@ if len(argv) >= 2:
 
 r = post(url, data=values)
 try:
+    r.raise_for_status()
     js = r.json()
     if len(js):
         print("[{}] {}".format(js['id'], js['name']))
