@@ -11,10 +11,14 @@ request(url, function (error, response, body) {
     process.exit();
   }
   let js = JSON.parse(body);
-  js['characters'].forEach(function(el) {
+  js['characters'].forEach(function (el) {
     request(el, function (error, response, body) {
-      let js = JSON.parse(body);
-      console.log(js['name']);
+      if (error) {
+        console.log(error);
+      } else {
+        let js = JSON.parse(body);
+        console.log(js['name']);
+      }
     });
   });
 });

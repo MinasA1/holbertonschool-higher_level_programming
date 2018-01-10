@@ -4,12 +4,18 @@ if (!(process.argv.length === 3)) {
   process.exit();
 }
 const request = require('request');
-let url = 'https://swapi.co/api/people/18'
-request(url, function (error, response, body) {
+let name = 'https://swapi.co/api/people/18/';
+request(process.argv[2], function (error, response, body) {
   if (error) {
     console.log(error);
     process.exit();
   }
+  let count = 0;
   let js = JSON.parse(body);
-  console.log(js['films'].length);
+  for (let el in js.results) {
+    if (js.results[el].characters.indexOf(name) >= 0) {
+      count = count + 1;
+    }
+  }
+  console.log(count);
 });

@@ -13,8 +13,12 @@ request(url, function (error, response, body) {
   let js = JSON.parse(body);
   for (let el in js['characters']) {
     request(js['characters'][el], function (error, response, body) {
-      let js = JSON.parse(body);
-      console.log(js['name']);
+      if (error) {
+        console.log(error);
+      } else {
+        let js = JSON.parse(body);
+        console.log(js['name']);
+      }
     });
   }
 });

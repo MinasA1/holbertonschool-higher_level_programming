@@ -6,11 +6,11 @@ if (!(process.argv.length === 4)) {
 const fs = require('fs');
 const request = require('request');
 request(process.argv[2], function (error, response, body) {
-  if (!error && response.statusCode == 200) {
+  if (!error && response.statusCode === 200) {
     fs.writeFile(process.argv[3], body, 'utf-8', function (err, data) {
       if (err) {
-	console.log(err);
-	process.exit();
+        console.log(err);
+        process.exit();
       }
     });
   }
