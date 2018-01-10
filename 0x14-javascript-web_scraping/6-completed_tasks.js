@@ -12,10 +12,12 @@ request(process.argv[2], function (error, response, body) {
   let newD = {};
 
   for (let k in dict) {
-    if (dict[k].userId in newD) {
-      newD[dict[k].userId] = newD[dict[k].userId] + 1;
-    } else {
-      newD[dict[k].userId] = 1;
+    if (dict[k].completed) {
+      if (dict[k].userId in newD) {
+	newD[dict[k].userId] = newD[dict[k].userId] + 1;
+      } else {
+	newD[dict[k].userId] = 1;
+      }
     }
   }
   console.log(newD);
