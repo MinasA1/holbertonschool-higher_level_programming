@@ -19,7 +19,7 @@ request(url, function (error, response, body) {
     process.exit();
   }
   let js = JSON.parse(body);
-  let resolves = []
+  let resolves = [];
   for (let el in js['characters']) {
     resolves.push(syncReq(js['characters'][el]));
   }
