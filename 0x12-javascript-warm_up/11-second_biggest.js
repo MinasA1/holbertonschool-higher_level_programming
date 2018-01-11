@@ -4,7 +4,7 @@ if (process.argv.length < 4) {
   process.exit();
 }
 let numbers = process.argv.slice(2).map(n => parseInt(n));
-numbers.sort(function(a, b) {
+numbers.sort(function (a, b) {
   return a < b;
 });
 console.log(numbers[1]);

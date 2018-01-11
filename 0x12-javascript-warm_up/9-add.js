@@ -1,15 +1,15 @@
 #!/usr/bin/node
-let numA =  Number.parseInt(process.argv[2]);
+let numA = Number.parseInt(process.argv[2]);
 if (isNaN(numA)) {
   console.log('NaN');
-  process.exit()
+  process.exit();
 }
-let numB =  Number.parseInt(process.argv[3]);
+let numB = Number.parseInt(process.argv[3]);
 if (isNaN(numB)) {
   console.log('NaN');
-  process.exit()
+  process.exit();
 }
-function add(a, b) {
+function add (a, b) {
   return a + b;
 }
 console.log(add(numA, numB));

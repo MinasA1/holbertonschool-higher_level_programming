@@ -1,9 +1,10 @@
 #!/usr/bin/node
 let num = Number.parseInt(process.argv[2]);
 if (isNaN(num)) {
-  return 1;
+  console.log(1);
+  process.exit();
 }
-function factorial(n) {
+function factorial (n) {
   if (n === 0) {
     return 1;
   }
